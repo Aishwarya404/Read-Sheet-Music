@@ -1,12 +1,20 @@
-<!-- 
-    Name : Aishwarya Sivakumar
-    UNI : as6418
--->
 
 {% extends "layout.html" %}
 
 {% block content %}
 
-<h3> Learning page under construction </h3>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
+<script>
+        let single_data = {{single_data|tojson}}
+</script>
+
+<div class="">
+{{single_data.content}}
+{{single_data.image}}
+</div>
+
+
+<input type="submit" class="edit-submit" id="" name="{{single_data.id}}" value="Continue">
 
 {% endblock %}
