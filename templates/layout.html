@@ -1,0 +1,51 @@
+<!-- 
+    Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+    UNI : as6418, rbk2145, ns3566, yj2713
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        
+        <!-- jquery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"> -->
+        <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'main.js') }}"></script> -->
+
+        <!-- ICON  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Learn to Read Sheet Music </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/learn">LEARNING</a>
+                <a class="navbar-brand" href="/quiz">QUIZ</a>
+                <form id="search">
+                    <input type="text" placeholder="type here..." id="key">
+                    <button type="submit" class="btn btn-light" id="navsubmit"> <i class="fa fa-search"></i> </button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container">   
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
+
+
+
+
