@@ -17,13 +17,9 @@ def welcome():
 def quiz():
    return render_template('quiz.html')
 
-@app.route('/learn')
+@app.route('/learn/<id>')
 def learn():
    return render_template('learn.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
-
-
-
-
