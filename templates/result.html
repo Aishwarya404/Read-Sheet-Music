@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    let single_data = {{single_data|tojson}}
+</script>
+<h3> You have scored {{single_data}} </h3>
+
+{% endblock %}
