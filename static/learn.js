@@ -1,28 +1,24 @@
 function edit_entry(new_entry,curr_id){
-  let time = new_entry["time"]
-  let data_to_save = {"time": time, "id_rn":curr_id}
-  console.log(data_to_save)
-  $.ajax({
-          type: "POST",
-          url: "edit_entry",
-          dataType : "json",
-          contentType: "application/json; charset=utf-8",
-          data : JSON.stringify(data_to_save),
-          success: function(result){
-              console.log("YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
-          },
-          error: function(request, status, error){
-              console.log("Error");
-              console.log(request)
-              console.log(status)
-              console.log(error)
-          }
-      });
+	let time = new_entry["time"]
+	let data_to_save = {"time": time, "id_rn":curr_id}
+	console.log(data_to_save)
+	$.ajax({
+		type: "POST",
+		url: "edit_entry",
+		dataType : "json",
+		contentType: "application/json; charset=utf-8",
+		data : JSON.stringify(data_to_save),
+		success: function(result){
+			console.log("Success")
+		},
+		error: function(request, status, error){
+			console.log("Error");
+			console.log(request)
+			console.log(status)
+			console.log(error)
+		}
+	});
 }
-
-
-
-
 
 
 $(document).ready(function(){
