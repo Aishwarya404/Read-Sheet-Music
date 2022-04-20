@@ -9,6 +9,10 @@ app = Flask(__name__, static_url_path='/static')
 
 
 #DATA
+current_id = 0
+learnTime = {
+
+}
 learnInfo = {
 
     "1": {
@@ -94,20 +98,22 @@ def learn(id=None):
 @app.route('/edit_entry', methods=['GET', 'POST'])
 def edit_entry():
     global learnTime
+    global current_id
 
 
     json_data = request.get_json()
     id_rn = json_data["id_rn"]
     time = json_data["time"]
 
-
+    current_id += 1
+    new_id = str(current_id)
     new_name_entry =  {
         "id": id_rn,
         "time": time
     }
 
-    learnTime[id_rn]=new_name_entry
-    return
+    learnTime[new_id]=new_name_entry
+    return jsonify(learnTime=learnTime)
 
 if __name__ == '__main__':
    app.run(debug = True)
