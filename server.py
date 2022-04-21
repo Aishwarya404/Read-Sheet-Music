@@ -17,7 +17,7 @@ learnInfo = {
     "1": {
             "id": "1",
             "content": "Music notation is written on a staff. A staff is basically comprised of four spaces and five lines. This is what it looks like:",
-            "image": "http://bp3.blogger.com/_Tad4UOfdqXs/RZTwOqb7whI/AAAAAAAAAAc/A31QI-ZldAM/w1200-h630-p-k-no-nu/staff-2.jpg"
+            "image": "http://bp3.blogger.com/_Tad4UOfdqXs/RZTwOqb7whI/AAAAAAAAAAc/A31QI-ZldAM/w1200-h630-p-k-no-nu/staff-2.png"
     },
     "2": {
             "id": "2",
@@ -27,17 +27,17 @@ learnInfo = {
     "3": {
             "id": "3",
             "content": "In this module, we will only learn notes on the treble clef. Here’s an overview of that will look like:",
-            "image": "https://www.dummies.com/wp-content/uploads/212454.image2.jpg"
+            "image": "https://www.dummies.com/wp-content/uploads/212454.image2.png"
     },
     "4": {
             "id": "4",
             "content": "We’ll only be learning one scale, that is, just 8 notes. Let’s start with space notes. F,A,C,E. They spell the word Face!",
-            "image": "https://lessonsinyourhome.net/wp-content/uploads/FACE.jpg"
+            "image": "https://lessonsinyourhome.net/wp-content/uploads/FACE.png"
     },
     "5": {
             "id": "5",
             "content": "Next, let’s learn line notes. Try to memorize them! If you’re finding this difficult, there’s a hint on the next page",
-            "image": "https://www.musicreadingsavant.com/wp-content/uploads/2011/07/treble-clef-line-notes.jpg?ezimgfmt=rs:282x113/rscb1/ng:webp/ngcb1"
+            "image": "https://www.musicreadingsavant.com/wp-content/uploads/2011/07/treble-clef-line-notes.png?ezimgfmt=rs:282x113/rscb1/ng:webp/ngcb1"
     },
     "6": {
             "id": "6",
@@ -70,44 +70,68 @@ learnInfo = {
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Eighth_Note_1_%28PSF%29.png"
     },
 }
-
-quiz_data = {
-   "1": {
-    	"id": 1,
-		"question": "Question 1",
-		"options": ["A", "B", "F", "G"],
-		"correct_answer": "F",
-		"media": "/static/media/F_note.png"
+quiz_data  ={
+    "1": {
+        "id": 1,
+        "question_image": True,
+        "Question": "What is this note?",
+        "Image": ["/static/pictures/F_note.png"],
+        "Answers": {
+            "A": "A",
+            "B": "B",
+            "C": "F",
+            "D": "G"},
+        "Correct_answer": "C"
     },
-   "2": {
-		"id": 2,
-		"question": "Question 2",
-		"options": ["A", "B", "F", "G"],
-		"correct_answer": "F",
-		"media": "/static/media/F_note.png"
+    "2": {
+        "id": 2,
+        "question_image": False,
+        "Question": "Click on the image corresponding to a B note",
+        "Answers":{
+            "A": "/static/pictures/F_note.png",
+            "B": "/static/pictures/B_note.png",
+            "C": "/static/pictures/C_note.png",
+            "D": "/static/pictures/D_note.png"},
+        "Correct_answer": "A"   
     },
    "3": {
-		"id": 3,
-		"question": "Question 3",
-		"options": ["A", "B", "F", "G"],
-		"correct_answer": "F",
-		"media": "/static/media/F_note.png"
+        "id": 3,
+        "question_image": True,
+        "Question": "Which letter note do both these images correspond to?",
+        "Image": ["/static/pictures/F_note.png", "/static/pictures/F_note2.png"],
+        "Answers":{
+            "A": "A",
+            "B": "E",
+            "C": "F",
+            "D": "G"},
+        "Correct_answer": "C"   
     },
-   "4": {
-		"id": 4,
-		"question": "Question 4",
-		"options": ["A", "B", "F", "G"],
-		"correct_answer": "F",
-		"media": "/static/media/F_note.png"
+    "4": {
+        "id": 4,
+        "question_image": True,
+        "Question": "Which letter note do both these images correspond to?",
+        "Image":  ["/static/pictures/E_note.png", "/static/pictures/E_note2.png"],
+        "Answers":{
+            "A": "A",
+            "B": "E",
+            "C": "F",
+            "D": "G"},
+        "Correct_answer": "E"   
     },
-   "5": {
-		"id": 5,
-		"question": "Question 5",
-		"options": ["A", "B", "F", "G"],
-		"correct_answer": "F",
-		"media": "/static/media/F_note.png"
-    }
-}
+    "5": {
+        "id": 5,
+        "question_image": False,
+        "Question": "Which of the following represent a half note?",
+        "Answers":{
+            "A": "/static/pictures/full_note.png",
+            "B": "/static/pictures/quarter_note.png",
+            "C": "/static/pictures/half_note.png",
+            "D": "/static/pictures/one_eighth_note.png"},
+        "Correct_answer": "C"   
+      }
+   }
+
+
 user_score = 0
 
 # ROUTES
@@ -129,8 +153,11 @@ def result():
 
 @app.route('/quiz/<id>')
 def quiz(id=None):
-	global quiz_data
-	return render_template('quiz.html', single_data = quiz_data[id])
+        global quiz_data
+        global user_score
+        if id == 1:
+            user_score = 0
+        return render_template('quiz.html', question_data = quiz_data[id])
 
 
 @app.route('/calculate_score', methods=['GET', 'POST'])
@@ -140,7 +167,7 @@ def calculate_score():
 	json_data = request.get_json()
 	user_answer = json_data["answer"]
 	id = json_data["id"]
-	correct_answer = quiz_data[str(id)]["correct_answer"]
+	correct_answer = quiz_data[str(id)]["Correct_answer"]
 	if user_answer == correct_answer:
 		user_score += 1
 	return str(id+1)
@@ -149,7 +176,7 @@ def calculate_score():
 
 @app.route('/learn/<id>')
 def learn(id=None):
-	global learnInfo;
+	global learnInfo
 	single_data = learnInfo[id]
 	return render_template('learn.html', single_data=single_data)
 

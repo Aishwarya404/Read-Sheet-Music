@@ -8,11 +8,18 @@
 {% block content %}
 <script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
 <script>
-    let single_data = {{single_data|tojson}}
+    let question_data = {{question_data|tojson}}
 </script>
 
-<h3> {{single_data.question}} </h3>
-<input type="text" id="answer" value="Aish">
-<input type="submit" class="next" id="" name="{{single_data.id}}" value="submit">
+
+<div class="container" id="quiz_page"> 
+    <div class="quiz_question"></div>
+    <div class="quiz_image">
+    </div>
+    <div class="quiz_options"></div>
+    <!-- <button onclick="window.location='/'">return to homepage</button> -->
+    <input type="submit" class="next" id="" name="{{question_data.id}}" value="submit">
+</div>
+
 
 {% endblock %}
