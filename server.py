@@ -27,21 +27,21 @@ learnInfo = {
     "3": {
             "id": "3",
             "content": "In this module, we will only learn notes on the treble clef. Here’s an overview of that will look like:",
-            "image": "https://www.dummies.com/wp-content/uploads/212454.image2.png"
+            "image": "http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/Treble-Clef-Notes.png"
     },
     "4": {
             "id": "4",
             "content": "We’ll only be learning one scale, that is, just 8 notes. Let’s start with space notes. F,A,C,E. They spell the word Face!",
-            "image": "https://lessonsinyourhome.net/wp-content/uploads/FACE.png"
+            "image": "https://www.skoove.com/blog/wp-content/uploads/2021/07/image1.png"
     },
     "5": {
             "id": "5",
             "content": "Next, let’s learn line notes. Try to memorize them! If you’re finding this difficult, there’s a hint on the next page",
-            "image": "https://www.musicreadingsavant.com/wp-content/uploads/2011/07/treble-clef-line-notes.png?ezimgfmt=rs:282x113/rscb1/ng:webp/ngcb1"
+            "image": "http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/treble-clef-line-notes.png"
     },
     "6": {
             "id": "6",
-            "content": "The first letter of every word of the following sentence corresponds to this line: 'Every Good Burrito Doesn’t Fall' You can use this to memorize line notes.",
+            "content": "The first letter of every word of the following sentence corresponds to this line: 'Every Good Boy Does Fine' You can use this to memorize line notes.",
             "image": "https://www.dacapoalcoda.com/_dl/images/note-positions-tregle-clef-egbdf.png"
     },
     "7": {
@@ -92,7 +92,7 @@ quiz_data  ={
             "B": "/static/pictures/B_note.png",
             "C": "/static/pictures/C_note.png",
             "D": "/static/pictures/D_note.png"},
-        "Correct_answer": "A"   
+        "Correct_answer": "A"
     },
    "3": {
         "id": 3,
@@ -104,7 +104,7 @@ quiz_data  ={
             "B": "E",
             "C": "F",
             "D": "G"},
-        "Correct_answer": "C"   
+        "Correct_answer": "C"
     },
     "4": {
         "id": 4,
@@ -116,7 +116,7 @@ quiz_data  ={
             "B": "E",
             "C": "F",
             "D": "G"},
-        "Correct_answer": "E"   
+        "Correct_answer": "E"
     },
     "5": {
         "id": 5,
@@ -127,7 +127,7 @@ quiz_data  ={
             "B": "/static/pictures/quarter_note.png",
             "C": "/static/pictures/half_note.png",
             "D": "/static/pictures/one_eighth_note.png"},
-        "Correct_answer": "C"   
+        "Correct_answer": "C"
       }
    }
 
@@ -185,7 +185,7 @@ def learn(id=None):
 @app.route('/edit_entry', methods=['GET', 'POST'])
 def edit_entry():
 	global learnTime
-    
+
 	json_data = request.get_json()
 	id_rn = json_data["id_rn"]
 	time = json_data["time"]
