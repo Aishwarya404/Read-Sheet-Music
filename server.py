@@ -92,7 +92,7 @@ quiz_data  ={
             "B": "/static/pictures/B_note.png",
             "C": "/static/pictures/C_note.png",
             "D": "/static/pictures/D_note.png"},
-        "Correct_answer": "A"
+        "Correct_answer": "B"
     },
    "3": {
         "id": 3,
@@ -116,7 +116,7 @@ quiz_data  ={
             "B": "E",
             "C": "F",
             "D": "G"},
-        "Correct_answer": "E"
+        "Correct_answer": "B"
     },
     "5": {
         "id": 5,
