@@ -7,12 +7,10 @@ from flask import Response, request, jsonify
 import json
 app = Flask(__name__, static_url_path='/static')
 
-
 #DATA
-current_id = 0
 learnTime = {
-
 }
+
 learnInfo = {
     "1": {
             "id": "1",
@@ -70,6 +68,7 @@ learnInfo = {
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Eighth_Note_1_%28PSF%29.png"
     },
 }
+
 quiz_data  ={
     "1": {
         "id": 1,
@@ -131,33 +130,32 @@ quiz_data  ={
       }
    }
 
-
 user_score = 0
+
 
 # ROUTES
 
 @app.route('/')
 def welcome():
-	return render_template('welcome.html')
+    return render_template('welcome.html')
 
 
 @app.route('/middle')
 def middle():
-	return render_template('middle.html')
+    global user_score
+    user_score = 0
+    return render_template('middle.html')
+
 
 @app.route('/result')
 def result():
-	return render_template('result.html', single_data = user_score)
-
+    return render_template('result.html', single_data = user_score)
 
 
 @app.route('/quiz/<id>')
 def quiz(id=None):
-        global quiz_data
-        global user_score
-        if id == 1:
-            user_score = 0
-        return render_template('quiz.html', question_data = quiz_data[id])
+    global quiz_data
+    return render_template('quiz.html', question_data = quiz_data[id])
 
 
 @app.route('/calculate_score', methods=['GET', 'POST'])

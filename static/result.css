@@ -1,0 +1,13 @@
+#result-content {
+    padding: 40px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: pink;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-text {
+    font-size: 28px !important;
+}

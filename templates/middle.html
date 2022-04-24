@@ -2,16 +2,27 @@
 
 {% block content %}
 
-<h3>middle page, has one button to start quiz and one button to go back to homepage</h3>
-<div class="">
-    <div class="col">
-    <div class="row-6">
-    	<a href="/">Go back to homepage</a>
+<link rel="stylesheet" href="{{url_for('static', filename='middle.css')}}">
+
+<div class="container" id="middle-content">
+    <div id="main-text">
+        Congratulations on completing your lesson in learning to read sheet music!
     </div>
-    <div class="row-6">
-    	<a href="/quiz/1">Continue with the Quiz</a>
+    <br>
+    <div>
+        Now it's time to put your skills to see how far you've come.
     </div>
-  </div>
+    <div>
+        Click on Continue to begin the Quiz and Review to revisit lessons
+    </div>
+    <div class="links">
+        <div class="link">
+            <a href="/quiz/1"> CONTINUE </a>
+        </div>
+    	<div class="link">
+            <a href="/"> REVIEW </a>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

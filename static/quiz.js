@@ -1,33 +1,30 @@
 function display_options(){
+	$(".question_no").text("Question " + question_data["id"]);
 	$(".quiz_question").text(question_data["Question"]);
-	console.log("aa")
-	console.log(question_data)
 	let $options = $(`<form action="/quiz" method="post"></form>`);
 	if (question_data["question_image"]){
 		for (let image in question_data["Image"]){
-			let question_img = $("<img src = '" + question_data['Image'][image] + "' id='theImg'>")
-			console.log(question_data["Image"][image])
+			let question_img = $("<div class='inline'> <img src = '" + question_data['Image'][image] + "' class='qImage'> </div>")
 			$(".quiz_image").append(question_img)
 		}
 	}
 
 	if (question_data["question_image"]){
     	for(let letter in question_data['Answers']){
-        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" /> ${question_data['Answers'][letter]}<br/>`);
+        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" class="aOption"/> <label> ${question_data['Answers'][letter]} </label> <br/>`);
     	}
 	}
 	else{
 		for(let letter in question_data['Answers']){
-        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" /> <img src = "${question_data['Answers'][letter]}" id='theImg'> <br/>`)
+        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" /> <img src = "${question_data['Answers'][letter]}" class='aImage'> <br> <br>`)
     	}
 	}
 	$(".quiz_options").append($options);
 }
 
-function validate_answer(answer, id){
 
+function validate_answer(answer, id){
 	let data_to_save = {"answer": answer, "id": id}
-	console.log("D", data_to_save)
 	$.ajax({
 		type: "POST",
 		url: "http://127.0.0.1:5000/calculate_score",
@@ -52,15 +49,9 @@ function validate_answer(answer, id){
 }
 
 $(document).ready(function(){
-	console.log("aaaaaaaaa")
 	display_options()
     $(".next").click(function(){
-
 		var $chosen_ans = $('input[name=' + question_data["id"] +']:checked').val();
-
-        // let answer = $radio.attr("value")
-		// console.log(answer)
-        //let curr_id = $('.next').attr('name')
         validate_answer($chosen_ans, question_data["id"])
 	})
 })
