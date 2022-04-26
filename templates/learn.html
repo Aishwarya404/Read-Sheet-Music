@@ -12,14 +12,19 @@
 <div class="">
 <div class="contents">
 {{single_data.content}}
+
+{{single_data.image}}
+
+
 </div>
 
 <div class="images">
 <img src = {{single_data.image}} height=200px>
 </div>
+
 </div>
 
-
+<input type="submit" class="back-submit" id="" name="{{single_data.id}}" value="Go Back">
 <input type="submit" class="edit-submit" id="" name="{{single_data.id}}" value="Continue">
 
 {% endblock %}

@@ -55,4 +55,3 @@ $(document).ready(function(){
         validate_answer($chosen_ans, question_data["id"])
 	})
 })
-  
