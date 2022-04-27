@@ -10,9 +10,11 @@
 <link rel="stylesheet" href="{{url_for('static', filename='quiz.css')}}">
 <script>
     let question_data = {{question_data|tojson}}
+    let id = {{id|tojson}}
 </script>
 
 <div class="container" id="quiz_page"> 
+    <progress id="progbar" name = "progbar" value = {{id}} - 1 max=5> </progress>
     <div class="question_no"> </div>
     <div class="quiz_question"> </div>
     <br>

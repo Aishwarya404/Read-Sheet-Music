@@ -155,7 +155,7 @@ def result():
 @app.route('/quiz/<id>')
 def quiz(id=None):
     global quiz_data
-    return render_template('quiz.html', question_data = quiz_data[id])
+    return render_template('quiz.html', question_data = quiz_data[id], id = int(id) - 1)
 
 
 @app.route('/calculate_score', methods=['GET', 'POST'])

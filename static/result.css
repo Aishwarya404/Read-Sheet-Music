@@ -8,6 +8,14 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#right_answer {
+    background-color: lightgreen;
+}
+
+#wrong_answer{
+    background-color: lightcoral;
+}
+
 .main-text {
     font-size: 28px !important;
 }
