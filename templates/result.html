@@ -6,6 +6,9 @@
 
 <script>
     let single_data = {{single_data|tojson}}
+    let right_ans = {{right_ans|tojson}}
+    let question_data = {{question_data|tojson}}
+
 </script>
 
 <div class="container" id="result-content">
@@ -15,6 +18,8 @@
     <div class="main-text">
         You have scored {{single_data}} / 5 
     </div>
+    <br>
+    <div class = "answer" id = "answer"></div>
     <br>
 </div>
 
