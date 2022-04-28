@@ -1,3 +1,7 @@
 body {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
+    background-image: url('./pictures/keys.jpg');
+    /* background-size: 2000px 2000px; */
+    background-size: cover;
+    background-position:50% 50%;
 }
