@@ -21,7 +21,7 @@ learnInfo = {
 	"2": {
 			"id": "2",
 			"content": "On every staff, there will be a symbol called a clef. There are two types of clefs: a treble clef and a bass clef. The treble clef is used for the higher sounding notes, usually played with the right hand. The bass clef, is used for the lower sounding notes, usually played with the left hand.",
-			"image": "https://www.nicepng.com/png/detail/327-3271386_the-bass-clef-musical.png"
+			"image": "https://dynamicmusicteaching.com/wp-content/uploads/2020/06/treble-and-bass-clefs-1-1024x602.png"
 	},
 	"3": {
 			"id": "3",

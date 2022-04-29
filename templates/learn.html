@@ -5,16 +5,16 @@
 
 
 <script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='learn.css')}}">
 <script>
         let single_data = {{single_data|tojson}}
 </script>
 
-<div class="">
+<div class="page">
 <div class="contents">
 {{single_data.content}}
 
-{{single_data.image}}
-
+<!-- {{single_data.image}} -->
 
 </div>
 
@@ -22,9 +22,11 @@
 <img src = {{single_data.image}} height=200px>
 </div>
 
+<div class="btns">
+        <input type="submit" class="back-submit button" id="" name="{{single_data.id}}" value="Go Back">
+        <input type="submit" class="edit-submit button" id="" name="{{single_data.id}}" value="Continue">
 </div>
 
-<input type="submit" class="back-submit" id="" name="{{single_data.id}}" value="Go Back">
-<input type="submit" class="edit-submit" id="" name="{{single_data.id}}" value="Continue">
+</div>
 
 {% endblock %}
