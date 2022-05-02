@@ -25,17 +25,17 @@ learnInfo = {
 	},
 	"3": {
 			"id": "3",
-			"content": "In this module, we will only learn notes on the treble clef. Here’s an overview of that will look like:",
+			"content": "In this module, we will only learn notes on the treble clef. Here's an overview of that will look like:",
 			"image": "http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/Treble-Clef-Notes.png"
 	},
 	"4": {
 			"id": "4",
-			"content": "We’ll only be learning one scale, that is, just 8 notes. Let’s start with space notes. F,A,C,E. They spell the word Face!",
+			"content": "We'll only be learning one scale, that is, just 8 notes. Let's start with space notes. F,A,C,E. They spell the word Face!",
 			"image": "https://www.skoove.com/blog/wp-content/uploads/2021/07/image1.png"
 	},
 	"5": {
 			"id": "5",
-			"content": "Next, let’s learn line notes. Try to memorize them! If you’re finding this difficult, there’s a hint on the next page",
+			"content": "Next, let's learn line notes. Try to memorize them! If you're finding this difficult, there's a hint on the next page",
 			"image": "http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/treble-clef-line-notes.png"
 	},
 	"6": {
@@ -45,7 +45,7 @@ learnInfo = {
 	},
 	"7": {
 			"id": "7",
-			"content": "We just finished learning a scale! Now, let’s move on to beats. The following music notation denotes that you can hold a note down for a maximum of 4 beats in this melody",
+			"content": "We just finished learning a scale! Now, let's move on to beats. The following music notation denotes that you can hold a note down for a maximum of 4 beats in this melody",
 			"image": "https://press.rebus.community/app/uploads/sites/81/2017/07/4-4-time-signature_0001-e1552559771468.png"
 	},
 	"8": {

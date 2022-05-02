@@ -22,42 +22,28 @@ function edit_entry(new_entry,curr_id){
 
 
 $(document).ready(function(){
+	$(".edit-submit").click(function(){
+		let curr_id = $('.edit-submit').attr('name')
 
-
-  $(".edit-submit").click(function(){
-
-
-    let curr_id = $('.edit-submit').attr('name')
-
-    let new_id = parseInt(curr_id)+1
-    /**If condition for last learn page**/
-    if(new_id == 12){
-      window.location.href = "http://127.0.0.1:5000/middle";
-    }else{
-      window.location.href = "http://127.0.0.1:5000/learn/"+new_id;
-      let time =  new Date($.now())
-      let new_entry = {"time": time}
-      edit_entry(new_entry, curr_id)
-    }
+		let new_id = parseInt(curr_id)+1
+		/**If condition for last learn page**/
+		if(new_id == 12){
+			window.location.href = "http://127.0.0.1:5000/middle";
+		} else{
+			window.location.href = "http://127.0.0.1:5000/learn/" + new_id;
+			let time =  new Date($.now())
+			let new_entry = {"time": time}
+			edit_entry(new_entry, curr_id)
+		}
 	})
-
-		$(".back-submit").click(function(){
-
-
-	    let curr_id = $('.back-submit').attr('name')
-
-	    let new_id = parseInt(curr_id)-1
-	    /**If condition for last learn page**/
-	    if(new_id == 0){
-	      window.location.href = "http://127.0.0.1:5000/";
-	    }else{
-	      window.location.href = "http://127.0.0.1:5000/learn/"+new_id;
-	    }
-		})
-
-
-
-
-
-
+	$(".back-submit").click(function(){
+		let curr_id = $('.back-submit').attr('name')
+		let new_id = parseInt(curr_id)-1
+		/**If condition for last learn page**/
+		if(new_id == 0){
+			window.location.href = "http://127.0.0.1:5000/";
+		}else{
+			window.location.href = "http://127.0.0.1:5000/learn/" + new_id;
+		}
+	})
 })
