@@ -21,7 +21,7 @@ learnInfo = {
 	"2": {
 			"id": "2",
 			"content": "On every staff, there will be a symbol called a clef. There are two types of clefs: a treble clef and a bass clef. The treble clef is used for the higher sounding notes, usually played with the right hand. The bass clef, is used for the lower sounding notes, usually played with the left hand.",
-			"image": "https://www.nicepng.com/png/detail/327-3271386_the-bass-clef-musical.png"
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVYO1s_vM41xwwZKAeTn6rqBBHFIwc-Y0d3w&usqp=CAU"
 	},
 	"3": {
 			"id": "3",
@@ -169,7 +169,7 @@ def calculate_score():
 	global right_ans
 	json_data = request.get_json()
 	user_answer = json_data["answer"]
-	
+
 	id = json_data["id"]
 	correct_answer = quiz_data[str(id)]["Correct_answer"]
 	if user_answer == correct_answer:
