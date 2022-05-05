@@ -92,6 +92,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "What is this note?",
 		"Image": ["/static/pictures/F_note.png"],
+		"Size": ['250px', '250px'],
 		"Answers": {
 			"A": "A",
 			"B": "B",
@@ -106,6 +107,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "How many beats does this hold note hold for?",
 		"Image": ["/static/pictures/one_eighth_note.png"],
+		"Size": ['250px', '250px'],
 		"Answers":{
 			"A": "1/2",
 			"B": "1/4",
@@ -133,6 +135,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "Is the below statement True or False",
 		"Image": ["/static/pictures/beams_q.png"],
+		"Size": [],
 		"Answers":{
 			"A": "True",
 			"B": "False"
@@ -145,6 +148,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "Which letter note do both these images correspond to?",
 		"Image": ["/static/pictures/F_note.png", "/static/pictures/F_note2.png"],
+		"Size": ['250px', '250px'],
 		"Answers":{
 			"A": "A",
 			"B": "E",
@@ -185,6 +189,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "How many beats does this rest hold for?",
 		"Image":  ["/static/pictures/restdot.png"],
+		"Size": [],
 		"Answers":{
 			"A": "3/8",
 			"B": "3",
@@ -199,6 +204,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "Which letter note do both these images correspond to?",
 		"Image":  ["/static/pictures/E_note.png", "/static/pictures/E_note2.png"],
+		"Size": ['250px', '250px'],
 		"Answers":{
 			"A": "A",
 			"B": "E",
@@ -213,6 +219,7 @@ quiz_data  = {
 		"answer_image": False,
 		"Question": "Count the total number of beats in the below sheet note.",
 		"Image": ["/static/pictures/count.png"],
+		"Size": [],
 		"Answers":{
 			"A": "12",
 			"B": "10",

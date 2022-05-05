@@ -4,7 +4,7 @@ function display_options(){
 	let $options = $(`<form action="/quiz" method="post"></form>`);
 	if (question_data["question_image"]){
 		for (let image in question_data["Image"]){
-			let question_img = $("<div class='inline'> <img src = '" + question_data['Image'][image] + "' class='qImage'> </div>")
+			let question_img = $("<div class='inline'> <img src = '" + question_data['Image'][image] + "' class='qImage' width='" + question_data['Size'][0] + "' height='" + question_data['Size'][1] + "'> </div>")
 			$(".quiz_image").append(question_img)
 		}
 	}

@@ -8,8 +8,7 @@
 }
 
 .qImage {
-    width: 400px;
-    height: 270px;
+    max-width: 100%;
     border: 5px solid black;
     margin: 10px
 }
