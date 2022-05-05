@@ -27,6 +27,10 @@
     font-size: 28px;
 }
 
+.secondary-text{
+  font-size: 20px;
+}
+
 a {
     color: darkgray;
 }
