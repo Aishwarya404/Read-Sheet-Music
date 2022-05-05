@@ -13,9 +13,12 @@
     <div class="contents">
         {{single_data.content}}
     </div>
-    <div class="images">
-        <img src = {{single_data.image}} height=200px>
-    </div>
+    <br>
+    {% for img in single_data.image %}
+        <div class="images">
+            <img src = {{img}}>
+        </div>
+    {% endfor %}
     <div class="btns">
         <input type="submit" class="back-submit button" id="" name="{{single_data.id}}" value="Go Back">
         <input type="submit" class="edit-submit button" id="" name="{{single_data.id}}" value="Continue">

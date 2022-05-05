@@ -22,7 +22,7 @@ function show_review_block() {
 
 $(document).ready(function(){
 	show_answers()
-    if(single_data < 5) {
+    if(single_data < 9) {
         show_review_block()
     }
 })
