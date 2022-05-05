@@ -9,10 +9,14 @@
 <link rel="stylesheet" href="{{url_for('static', filename='welcome.css')}}">
 
 <div class = "page">
-    <h1> Learning to Read Sheet Music </h1>
+    <h1> Learn to Read Sheet Music </h1>
     <br>
-    <div class="main-text"> Have you heard a song and thought, "Hey it'd be cool to play that!". Well, learning to read sheet music is the first step to get there. Click on <b> START </b> to begin lessons. </div>
-    <br>
+    <div class="main-text"> 
+        Have you heard a song and thought, "Hey it'd be cool to play that!". Well, learning to read sheet music is the first step to get there. Click on 
+        <span class="links">
+            <a href="/learn/1"> START </a>
+        </span> to begin lessons.
+    </div>
     <div class="lessons">
         <div class="main-text">
             LESSONS
@@ -21,10 +25,7 @@
             <a href="/learn/1"> Staff & Clef </a>
         </div>
         <div class="links">
-            <a href="/learn/4">  Space Notes </a>
-        </div>
-        <div class="links">
-            <a href="/learn/5"> Line Notes </a>
+            <a href="/learn/4">  Space & Line </a>
         </div>
         <div class="links">
             <a href="/learn/7"> Beats </a>
@@ -35,10 +36,6 @@
         <div class="links">
             <a href="/learn/14"> Rests </a>
         </div>
-    </div>
-    <br>
-    <div class="links continue">
-        <a href="/learn/1"> START </a>
     </div>
 </div>
 

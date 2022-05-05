@@ -1,3 +1,6 @@
+// Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+// UNI : as6418, rbk2145, ns3566, yj2713 
+
 function edit_entry(new_entry,curr_id){
 	let time = new_entry["time"]
 	let data_to_save = {"time": time, "id_rn":curr_id}

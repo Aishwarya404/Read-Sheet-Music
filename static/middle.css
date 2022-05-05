@@ -1,27 +1,30 @@
+/* 
+Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+UNI : as6418, rbk2145, ns3566, yj2713 
+*/
+
 #middle-content {
     padding: 40px;
     padding-bottom: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #fff8e7;
-    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.553);
+    font-size: 22px;
+    font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #main-text {
-    font-size: 25px !important;
-}
-
-.link {
-    display: inline-block;
-    margin-right: 100px;
-    margin-top: 40px;
+    font-size: 28px !important;
+    font-weight: 400;
 }
 
 .links {
-    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 a {
-    color: darkgray;
+    color: rgb(126, 125, 125);
+    font-weight: 900;
 }

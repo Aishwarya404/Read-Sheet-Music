@@ -1,15 +1,20 @@
+/* 
+Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+UNI : as6418, rbk2145, ns3566, yj2713 
+*/
+
 #result-content {
     width: fit-content;
     padding: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #fff8e7;
+    background-color: rgba(255, 255, 255, 0.553);
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #answer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.437);
     padding: 30px;
     margin: auto;
 }
@@ -36,5 +41,6 @@ i {
 }
 
 a {
-    color: darkgray;
+    color: rgb(126, 125, 125);
+    font-weight: 900;
 }

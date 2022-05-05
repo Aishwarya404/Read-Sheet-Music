@@ -1,3 +1,7 @@
+/* 
+Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+UNI : as6418, rbk2145, ns3566, yj2713 
+*/
 
 .title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,7 +19,7 @@
 
 img {
     max-width: 100%;
-    height: 200px;
+    height: 230px;
     border: 5px solid black;
 }
 
@@ -31,8 +35,7 @@ img {
 }
 
 .page{
-    padding: 40px;
-    padding-bottom: 50px;
+    padding: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: #fff8e7;
