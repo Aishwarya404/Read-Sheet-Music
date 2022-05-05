@@ -18,18 +18,18 @@
 }
 
 .aImage {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border: 5px solid black;
 }
 
 .quiz_question {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .question_no {
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

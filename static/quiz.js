@@ -51,7 +51,11 @@ function validate_answer(answer, id){
 $(document).ready(function(){
 	display_options()
     $(".next").click(function(){
-		var $chosen_ans = $('input[name=' + question_data["id"] +']:checked').val();
-        validate_answer($chosen_ans, question_data["id"])
+		if ($("input[type=radio]:checked").length == 0) {
+			window.alert("Question Not answered! Please choose an option.")
+		} else {
+			var $chosen_ans = $('input[name=' + question_data["id"] +']:checked').val();
+       		validate_answer($chosen_ans, question_data["id"])
+		}
 	})
 })

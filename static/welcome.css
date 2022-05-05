@@ -5,16 +5,16 @@
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: #fff8e7;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 100% !important;
 }
 
 .lessons {
     background-color: white;
-    width: fit-content;
+    /* width: fit-content; */
     padding: 40px;
-    padding-left: 70px;
+    /* padding-left: 70px; */
     padding-right: 70px;
     margin: auto;
 }
@@ -34,7 +34,7 @@
 }
 
 .main-text {
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 10px
 }
 

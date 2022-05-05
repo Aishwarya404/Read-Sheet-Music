@@ -11,6 +11,11 @@ body {
     z-index: 100;
 }
 
+.navbar-brand {
+    color: lightgrey !important;
+    display: inline-flex !important;
+}
+
 .main {
     margin-top: 100px;
 }
