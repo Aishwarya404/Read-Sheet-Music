@@ -20,7 +20,6 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="{{url_for('static', filename='layout.css')}}">
-        <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'main.js') }}"></script> -->
 
         <!-- ICON  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,16 +29,13 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="/" id="icon"> HOME </a>
-                <a class="navbar-brand" href="/middle">QUIZ</a>
-                <!-- <form id="search">
-                    <input type="text" placeholder="type here..." id="key">
-                    <button type="submit" class="btn btn-light" id="navsubmit"> <i class="fa fa-search"></i> </button>
-                </form> -->
+                <a class="navbar-brand" href="/"> Learn to Read Sheet Music </a>
+                <a class="navbar-brand" href="/learn/1" class="icon"> LEARN </a>
+                <a class="navbar-brand" href="/middle" class="icon">QUIZ</a>
             </div>
         </nav>
 
-        <div class="container">   
+        <div class="container main">   
             {% block content %}
             {% endblock %}
         </div>

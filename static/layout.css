@@ -3,3 +3,19 @@ body {
     background-size: cover;
     background-position:50% 50%;
 }
+
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 100;
+}
+
+.navbar-brand {
+    color: lightgrey !important;
+    display: inline-flex !important;
+}
+
+.main {
+    margin-top: 100px;
+}

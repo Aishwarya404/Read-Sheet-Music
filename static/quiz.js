@@ -4,19 +4,19 @@ function display_options(){
 	let $options = $(`<form action="/quiz" method="post"></form>`);
 	if (question_data["question_image"]){
 		for (let image in question_data["Image"]){
-			let question_img = $("<div class='inline'> <img src = '" + question_data['Image'][image] + "' class='qImage'> </div>")
+			let question_img = $("<div class='inline'> <img src = '" + question_data['Image'][image] + "' class='qImage' width='" + question_data['Size'][0] + "' height='" + question_data['Size'][1] + "'> </div>")
 			$(".quiz_image").append(question_img)
 		}
 	}
 
-	if (question_data["question_image"]){
-    	for(let letter in question_data['Answers']){
-        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" class="aOption"/> <label> ${question_data['Answers'][letter]} </label> <br/>`);
+	if (question_data["answer_image"]){
+		for(let letter in question_data['Answers']){
+        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" /> <img src = "${question_data['Answers'][letter]}" class='aImage'> <br> <br>`)
     	}
 	}
 	else{
 		for(let letter in question_data['Answers']){
-        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" /> <img src = "${question_data['Answers'][letter]}" class='aImage'> <br> <br>`)
+        	$options.append(`<input type="radio" name="${question_data['id']}" id = "${letter}" value="${letter}" class="aOption"/> <label> ${question_data['Answers'][letter]} </label> <br/>`);
     	}
 	}
 	$(".quiz_options").append($options);
@@ -33,7 +33,7 @@ function validate_answer(answer, id){
 		data : JSON.stringify(data_to_save),
 		success: function(result){
 			console.log(result)
-            if(parseInt(result) == 6){
+            if(parseInt(result) == 11){
                 window.location.href = "http://127.0.0.1:5000/result";
             }else{
                 window.location.href = "http://127.0.0.1:5000/quiz/"+parseInt(result);
@@ -51,7 +51,11 @@ function validate_answer(answer, id){
 $(document).ready(function(){
 	display_options()
     $(".next").click(function(){
-		var $chosen_ans = $('input[name=' + question_data["id"] +']:checked').val();
-        validate_answer($chosen_ans, question_data["id"])
+		if ($("input[type=radio]:checked").length == 0) {
+			window.alert("Question Not answered! Please choose an option.")
+		} else {
+			var $chosen_ans = $('input[name=' + question_data["id"] +']:checked').val();
+       		validate_answer($chosen_ans, question_data["id"])
+		}
 	})
 })
