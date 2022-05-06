@@ -35,7 +35,7 @@ learnInfo = {
 			"id": "4",
 			"title": "Space Notes",
 			"content": "We'll only be learning one scale, that is, just 8 notes. Let's start with space notes. F,A,C,E. They spell the word Face!",
-			"image": ["https://www.skoove.com/blog/wp-content/uploads/2021/07/image1.png"]
+			"image": ["https://lessonsinyourhome.net/wp-content/uploads/FACE.jpg"]
 	},
 	"5": {
 			"id": "5",
