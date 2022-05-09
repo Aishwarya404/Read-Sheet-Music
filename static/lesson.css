@@ -9,13 +9,15 @@
 }
 
 .main-text {
-    font-size: 25px;
+    text-align: left;
     margin-bottom: 10px;
     font-weight: 700;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
-    color: rgb(100, 100, 100);
+    color: rgb(52, 52, 52);
     font-weight: 700;
     font-size: 20px;
 }
@@ -27,6 +29,8 @@ a {
 
 .links, .sublinks {
     margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #begin {

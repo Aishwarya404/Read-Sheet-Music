@@ -28,6 +28,10 @@ h1 {
     font-size: 60px !important;
 }
 
+<<<<<<< HEAD
+h1 {
+    text-align: center;
+=======
 #begin {
     margin: auto;
     margin-top: 30px;
@@ -39,8 +43,10 @@ h1 {
     color: rgb(100, 100, 100);
     font-size: 18px;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 #begin:hover {
     background-color: lightgray;
+>>>>>>> 55f915afda3aba322de7a32236c32efeadc6ee9a
 }
