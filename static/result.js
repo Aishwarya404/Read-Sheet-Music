@@ -16,7 +16,7 @@ function show_answers() {
 }
 
 function show_review_block() {
-    let $div = $(`<div class="main-text"> Click on <b> <span class="links"> <a href="/"> REVIEW </a> </span> </b> to revisit lessons. </div>`);
+    let $div = $(`<div class="main-text"> Click on <b> <span class="links"> <a href="/lesson"> REVIEW </a> </span> </b> to revisit lessons. </div>`);
     $("#result-content").append($div)
 }
 

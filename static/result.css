@@ -28,8 +28,10 @@ UNI : as6418, rbk2145, ns3566, yj2713
 }
 
 i {
-    padding-left: 30px;
+    float:right;
+    margin-right: 200px;
     font-size: 30px;
+    margin-top: 5px;
 }
 
 .fa-check {
@@ -41,6 +43,6 @@ i {
 }
 
 a {
-    color: rgb(126, 125, 125);
+    color: rgb(100, 100, 100);
     font-weight: 900;
 }

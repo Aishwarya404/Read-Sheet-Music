@@ -42,7 +42,7 @@ $(document).ready(function(){
 		let curr_id = $('.back-submit').attr('name')
 		let new_id = parseInt(curr_id) - 1
 		if(new_id == 0){
-			window.location.href = "http://127.0.0.1:5000/";
+			window.location.href = "http://127.0.0.1:5000/lesson";
 		}else{
 			window.location.href = "http://127.0.0.1:5000/learn/" + new_id;
 		}

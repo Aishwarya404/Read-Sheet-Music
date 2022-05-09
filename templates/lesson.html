@@ -1,0 +1,57 @@
+<!--
+    Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+    UNI : as6418, rbk2145, ns3566, yj2713
+-->
+
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'lesson.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='lesson.css')}}">
+<div class="lessons">
+    <div class="main-text">
+        LESSONS
+    </div>
+    <div class="links">
+        <a href="/learn/1"> 1. Staff </a>
+    </div>
+    <div class="links">
+        <a href="/learn/2"> 2. Clefs </a>
+    </div>
+    <div class="links">
+        <a href="/learn/3"> 3. Notes </a>
+    </div>
+    <div class="sublinks">
+        <a href="/learn/4">  a) Space Notes </a>
+    </div>
+    <div class="sublinks">
+        <a href="/learn/5">  b) Line Notes </a>
+    </div>
+    <div class="links">
+        <a href="/learn/7"> 4. Beats </a>
+    </div>
+    <div class="sublinks">
+        <a href="/learn/8"> a) Whole Note </a>
+    </div>
+    <div class="sublinks">
+        <a href="/learn/9"> b) Half Note </a>
+    </div>
+    <div class="sublinks">
+        <a href="/learn/10"> c) Quarter Note </a>
+    </div>
+    <div class="sublinks">
+        <a href="/learn/11"> d) Eighth Note </a>
+    </div>
+    <div class="links">
+        <a href="/learn/12"> 5. Beams </a>
+    </div>
+    <div class="links">
+        <a href="/learn/13"> 6. Dots & Ties </a>
+    </div>
+    <div class="links">
+        <a href="/learn/14"> 7. Rest </a>
+    </div>
+    <button type="submit" id="begin"> CONTINUE </button>
+</div>
+
+{% endblock %}
