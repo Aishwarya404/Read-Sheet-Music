@@ -6,37 +6,16 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
 <link rel="stylesheet" href="{{url_for('static', filename='welcome.css')}}">
 
 <div class = "page">
     <h1> Learn to Read Sheet Music </h1>
     <br>
     <div class="main-text"> 
-        Have you heard a song and thought, "Hey it'd be cool to play that!". Well, learning to read sheet music is the first step to get there. Click on 
-        <span class="links">
-            <a href="/learn/1"> START </a>
-        </span> to begin lessons.
+        Have you heard a song and thought, "Hey it'd be cool to play that!". Well, learning to read sheet music is the first step to get there. 
     </div>
-    <div class="lessons">
-        <div class="main-text">
-            LESSONS
-        </div>
-        <div class="links">
-            <a href="/learn/1"> Staff & Clef </a>
-        </div>
-        <div class="links">
-            <a href="/learn/4">  Space & Line </a>
-        </div>
-        <div class="links">
-            <a href="/learn/7"> Beats </a>
-        </div>
-        <div class="links">
-            <a href="/learn/12">  Beams, Dots & Ties </a>
-        </div>
-        <div class="links">
-            <a href="/learn/14"> Rests </a>
-        </div>
-    </div>
+    <button type="submit" id="begin"> START LEARNING </button>
 </div>
 
 {% endblock %}
