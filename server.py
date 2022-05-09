@@ -76,7 +76,7 @@ learnInfo = {
 	"11": {
 			"id": "11",
 			"title": "Eighth Note",
-			"content": "And finally, if you see a note with a vertical line and a squiggly line also called a flag on it, then you hold it down for exactly half a beat. This is also called an one eighth note.",
+			"content": "And finally, if you see a note with a vertical line and a squiggly line also called a flag on it, then you hold it down for exactly half a beat. This is also called a one eighth note.",
 			"image": ["https://upload.wikimedia.org/wikipedia/commons/2/23/Eighth_Note_1_%28PSF%29.png"]
 	},
 	"12": {
@@ -119,7 +119,7 @@ quiz_data  = {
 		"id": 2,
 		"question_image": True,
 		"answer_image": False,
-		"Question": "How many beats does this hold note hold for?",
+		"Question": "How many beats does this note hold for?",
 		"Image": ["/static/pictures/one_eighth_note.png"],
 		"Size": ['250px', '250px'],
 		"Answers":{
@@ -147,7 +147,7 @@ quiz_data  = {
 		"id": 4,
 		"question_image": True,
 		"answer_image": False,
-		"Question": "Is the below statement True or False",
+		"Question": "Is the statement below True or False",
 		"Image": ["/static/pictures/beams_q.png"],
 		"Size": [],
 		"Answers":{
@@ -175,7 +175,7 @@ quiz_data  = {
 		"id": 6,
 		"question_image": False,
 		"answer_image": True,
-		"Question": "Which of the following represent a half note?",
+		"Question": "Which of the following represents a half note?",
 		"Answers":{
 			"A": "/static/pictures/full_note.png",
 			"B": "/static/pictures/quarter_note.png",
@@ -231,7 +231,7 @@ quiz_data  = {
 		"id": 10,
 		"question_image": True,
 		"answer_image": False,
-		"Question": "Count the total number of beats in the below sheet note.",
+		"Question": "Count the total number of beats in the sheet music below.",
 		"Image": ["/static/pictures/count.png"],
 		"Size": [],
 		"Answers":{
