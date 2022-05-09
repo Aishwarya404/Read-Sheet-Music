@@ -1,3 +1,6 @@
+// Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+// UNI : as6418, rbk2145, ns3566, yj2713
+
 function show_answers() {
     for (let ind in question_data){
         console.log(ind)
@@ -13,7 +16,7 @@ function show_answers() {
 }
 
 function show_review_block() {
-    let $div = $(`<div> Click on <b> <span class="links"> <a href="/"> REVIEW </a> </span> </b> to revisit lessons. </div>`);
+    let $div = $(`<div class="main-text"> Click on <b> <span class="links"> <a href="/lesson"> REVIEW </a> </span> </b> to revisit lessons. </div>`);
     $("#result-content").append($div)
 }
 

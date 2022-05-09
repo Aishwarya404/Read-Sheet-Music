@@ -16,7 +16,7 @@ learnInfo = {
 	"1": {
 			"id": "1",
 			"title": "Staff",
-			"content": "Music notation is written on a staff. A staff is basically comprised of four spaces and five lines. This is what it looks like :",
+			"content": "Music notation is written on a staff. A staff is basically comprised of four spaces and five lines. This is what it looks like.",
 			"image": ["http://bp3.blogger.com/_Tad4UOfdqXs/RZTwOqb7whI/AAAAAAAAAAc/A31QI-ZldAM/w1200-h630-p-k-no-nu/staff-2.png"]
 	},
 	"2": {
@@ -28,7 +28,7 @@ learnInfo = {
 	"3": {
 			"id": "3",
 			"title": "Overview",
-			"content": "In this module, we will only learn notes on the treble clef. Here's an overview of what that will look like:",
+			"content": "In this module, we will only learn notes on the treble clef. Here's an overview of what that will look like.",
 			"image": ["http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/Treble-Clef-Notes.png"]
 	},
 	"4": {
@@ -40,7 +40,7 @@ learnInfo = {
 	"5": {
 			"id": "5",
 			"title": "Line Notes",
-			"content": "Next, let's learn line notes. Try to memorize them! If you're finding this difficult, there's a hint on the next page",
+			"content": "Next, let's learn line notes. Try to memorize them! If you're finding this difficult, there's a hint on the next page.",
 			"image": ["http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/treble-clef-line-notes.png"]
 	},
 	"6": {
@@ -52,30 +52,30 @@ learnInfo = {
 	"7": {
 			"id": "7",
 			"title": "Beats",
-			"content": "We just finished learning a scale! Now, let's move on to beats. The following music notation denotes that you can hold a note down for a maximum of 4 beats in this melody",
+			"content": "We just finished learning a scale! Now, let's move on to beats. The following music notation denotes that you can hold a note down for a maximum of 4 beats in this melody.",
 			"image": ["https://press.rebus.community/app/uploads/sites/81/2017/07/4-4-time-signature_0001-e1552559771468.png"]
 	},
 	"8": {
 			"id": "8",
-			"title": "Whole",
+			"title": "Whole Note",
 			"content": "But how do we know exactly how many beats to hold a note for? If you see a note without any vertical lines on it, then you hold it down for exactly 4 beats. This is also called a whole note.",
 			"image": ["https://study.com/cimages/multimages/16/773523164_whole_note.png"]
 	},
 	"9": {
 			"id": "9",
-			"title": "Half",
+			"title": "Half Note",
 			"content": "If you see a note that is white on the inside and has a vertical line attached to it, then you hold it down for exactly 2 beats. This is also called a half note.",
 			"image": ["https://media.istockphoto.com/vectors/black-music-half-note-on-staff-lines-vector-id1186530961?b=1&k=20&m=1186530961&s=170667a&w=0&h=3ly1SosFmcOheh8TtOPQmBqVmzbsyb4uol8XyFTT70w="]
 	},
 	"10": {
 			"id": "10",
-			"title": "Quarter",
+			"title": "Quarter Note",
 			"content": "If you see a note that is coloured black and has a vertical line attached to it, then you hold it down for exactly 1 beat. This is also called a quarter note.",
 			"image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_YLoC6DhohF5wQNJVCayTLL2ok9obgp3j9Iqrd0T4wi9GyiK"]
 	},
 	"11": {
 			"id": "11",
-			"title": "Eighth",
+			"title": "Eighth Note",
 			"content": "And finally, if you see a note with a vertical line and a squiggly line on it, then you hold it down for exactly half a beat. This is also called an one eighth note.",
 			"image": ["https://upload.wikimedia.org/wikipedia/commons/2/23/Eighth_Note_1_%28PSF%29.png"]
 	},
@@ -89,7 +89,7 @@ learnInfo = {
 			"id": "13",
 			"title": "Dots & Ties",
 			"content": "There are other ways to extend the length of a note. A dot after the note head, adds another half of that note’s duration to it. So, a half note with a dot would equal a half note and a quarter note. A tie may also be used to extend a note. Two notes tied together should be held as long as the value of both of those notes together.",
-			"image": ["/static/pictures/ties.png"]
+			"image": ["/static/pictures/ties.jpeg"]
 	},
 	"14": {
 			"id": "14",
@@ -253,6 +253,11 @@ right_ans = []
 @app.route('/')
 def welcome():
 	return render_template('welcome.html')
+
+
+@app.route('/lesson')
+def lesson():
+	return render_template('lesson.html')
 
 
 @app.route('/middle')

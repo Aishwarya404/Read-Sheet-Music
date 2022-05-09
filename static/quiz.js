@@ -1,3 +1,6 @@
+// Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+// UNI : as6418, rbk2145, ns3566, yj2713
+
 function display_options(){
 	$(".question_no").text("Question " + question_data["id"]);
 	$(".quiz_question").text(question_data["Question"]);

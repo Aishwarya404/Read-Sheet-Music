@@ -1,3 +1,6 @@
+// Contributors : Aishwarya Sivakumar, Roshan Babu, Nidhi Sunil Kumar, Yina Jian
+// UNI : as6418, rbk2145, ns3566, yj2713 
+
 function edit_entry(new_entry,curr_id){
 	let time = new_entry["time"]
 	let data_to_save = {"time": time, "id_rn":curr_id}
@@ -39,7 +42,7 @@ $(document).ready(function(){
 		let curr_id = $('.back-submit').attr('name')
 		let new_id = parseInt(curr_id) - 1
 		if(new_id == 0){
-			window.location.href = "http://127.0.0.1:5000/";
+			window.location.href = "http://127.0.0.1:5000/lesson";
 		}else{
 			window.location.href = "http://127.0.0.1:5000/learn/" + new_id;
 		}
