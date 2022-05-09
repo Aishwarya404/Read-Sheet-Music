@@ -28,12 +28,7 @@ h1 {
     font-size: 60px !important;
 }
 
-<<<<<<< HEAD
-h1 {
-    text-align: center;
-=======
 #begin {
-    margin: auto;
     margin-top: 30px;
     width: 30%;
     height: 50px;
@@ -48,5 +43,4 @@ h1 {
 
 #begin:hover {
     background-color: lightgray;
->>>>>>> 55f915afda3aba322de7a32236c32efeadc6ee9a
 }
