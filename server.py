@@ -76,25 +76,25 @@ learnInfo = {
 	"11": {
 			"id": "11",
 			"title": "Eighth Note",
-			"content": "And finally, if you see a note with a vertical line and a squiggly line on it, then you hold it down for exactly half a beat. This is also called an one eighth note.",
+			"content": "And finally, if you see a note with a vertical line and a squiggly line also called a flag on it, then you hold it down for exactly half a beat. This is also called an one eighth note.",
 			"image": ["https://upload.wikimedia.org/wikipedia/commons/2/23/Eighth_Note_1_%28PSF%29.png"]
 	},
 	"12": {
 			"id": "12",
 			"title": "Beams",
-			"content": "We saw how each flag halves the value of a note, so a single flag signifies 1/2 of a quarter note, a double flag halves that to 1/4 of a quarter note, et cetera. Beams do the same while allowing us to read the music more clearly and keep the notation less cluttered.",
+			"content": "We saw how each flag halves the value of a note, so a single flag signifies 1/2 of a quarter note. Beams do the same while allowing us to read the music more clearly and keep the notation less cluttered.",
 			"image": ["/static/pictures/beam.jpeg"]
 	},
 	"13": {
 			"id": "13",
 			"title": "Dots & Ties",
-			"content": "There are other ways to extend the length of a note. A dot after the note head, adds another half of that note’s duration to it. So, a half note with a dot would equal a half note and a quarter note. A tie may also be used to extend a note. Two notes tied together should be held as long as the value of both of those notes together.",
+			"content": "There are other ways to extend the length of a note. A dot after the note head, adds another half of that note’s duration to it. A tie may also be used to extend a note. Two notes tied together should be held as long as the value of both of those notes together.",
 			"image": ["/static/pictures/ties.jpeg"]
 	},
 	"14": {
 			"id": "14",
 			"title": "Rest",
-			"content": "But what happens when there isn’t a note taking up each beat? It’s easy, we take a rest! A rest, just like a note, shows us how long it should be held based on its shape. A whole rest is taken for 4 beats, a half rest for 2 beats and so on." ,
+			"content": "But what happens when there isn’t a note taking up each beat? We take a rest! A rest, just like a note, shows us how long it should be held based on its shape. A whole rest is taken for 4 beats, a half rest for 2 beats etc." ,
 			"image": ["/static/pictures/rest.png"]
 	}
 }
